@@ -21,6 +21,18 @@ Composer (1.9.1)
 3. Install using Composer
 4. Setup your DB connection in the .env file (follow the general steps)
 
+#### Setting up your test MySQL table:
+
+1. Given you already have superuser access to your DB, simply run the SQL dump to create the DB and table.
+
+#### To run the console command:
+
+1. Go to the directory where you cloned the repository
+2. Go inside the data/ folder.
+3. Type './bin/console ImportCSV --help' to display the configuration screen.
+4. To run the script, './bin/console ImportCSV stock.csv'. It should display the results of the import and DB operations.
+5. To test run, './bin/console ImportCSV --test-only csvfile stock.csv'. It normally runs except it doesn't add the records to the DB.
+
 #### DISCLAIMER:
 
 1. This project is a work in progress (WIP)
