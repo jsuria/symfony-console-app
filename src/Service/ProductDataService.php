@@ -41,7 +41,8 @@ class ProductDataService
      * @return array
      */
     public function findAll() {
-
+        // A placeholder function in case we need to
+        // fetch the products from the DB
         $queryBuilder = $this->conn->createQueryBuilder();
         $queryBuilder->select('*')->from('ProductData');
 
